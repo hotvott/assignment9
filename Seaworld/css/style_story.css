@@ -1,0 +1,241 @@
+body {
+  background-image: url("https://dikult205.k.uib.no/2019V/F3p19/assignment5/Seaworld/img/sea.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*////////////// TEXT ////////////*/
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #071742;
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  position: sticky;
+  top: 5em;
+}
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  font-size: 5em;
+  position: relative;
+  top: 35%;
+  margin: 0;
+}
+
+.title {
+  height: 100vh;
+}
+
+p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.text {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  background: rgb(255,255,255,0.4);
+  box-shadow: -2px 12px 51px -21px rgba(0,5,74,0.49);
+}
+
+.text p {
+  color: #071742;
+  font-size: 2em;
+  text-align: center;
+  z-index: 1000;
+}
+
+
+/*////////////// IMAGES ////////////*/
+
+
+#blood {
+  position: sticky;
+  top: 34%;
+  left: 15%;
+  width: 12%;
+  height: auto;
+  z-index: -1;
+  animation: movements 6s ease-in-out infinite;
+}
+
+
+#boat {
+  position: sticky;
+  top: 8%;
+  left: 54%;
+  width: 24%;
+  height: auto;
+  z-index: -1;
+  animation: movements 6s ease-in-out infinite;
+}
+
+#mother {
+  position: sticky;
+  top: 30%;
+  right: 60%;
+  width: 30%;
+  height: auto;
+  z-index: -1;
+  animation: movements 6s ease-in-out infinite;
+}
+
+#babynudge {
+  position: sticky;
+  top: 50%;
+  left: 25%;
+  width: 14%;
+  height: auto;
+  z-index: -1;
+  animation: movements 6s ease-in-out infinite;
+}
+
+
+#seaworld_background {
+  min-width: 100vw;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+  z-index: -2;
+}
+
+#nudge_blood {
+  position: sticky;
+  top: 50%;
+  left: 30%;
+  height: auto;
+  z-index: -1;
+  animation: movements 6s ease-in-out infinite;
+}
+
+#grandmother {
+  position: sticky;
+  top: 34%;
+  left: 4%;
+  height: auto;
+  z-index: -1;
+  animation: movements 6s ease-in-out infinite;
+
+}
+
+/*////////////// ANIMATION ////////////*/
+
+@keyframes movements {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes scroll_blink {
+ 0% {
+   color: transparent;
+ }
+ 50% {
+   color: grey;
+ }
+ 100% {
+   color: transparent;
+ }
+}
+
+#scroll_animation {
+  color: transparent;
+  font-size: 2em;
+  text-align: center;
+}
+
+#scroll_animation {
+  animation: scroll_blink 5s;
+}
+
+/*////////////// PLACEMENTS ////////////*/
+.content_container  {
+  left: 0;
+}
+
+.part1, .part2, .part3, .part4, .part5, .part6, .part7 {
+  height: 100vh;
+  animation-name: movements;
+  animation-duration: 4s;
+}
+
+.empty {
+  height: 80vh;
+}
+
+.content_container {
+  position: absolute;
+}
+
+.aboutRescue {
+  height: 100vh;
+  background-color: white;
+}
+
+.background_image {
+  background-color: #0054a5;
+  color: white;
+  width: 100vw;
+  height: 25vh;
+}
+
+.rescueText {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 0.5em;
+}
+
+
+.rescueText p, .rescueText img, .rescueText figcaption {
+  grid-column-start: 2;
+  line-height: 1.6;
+  font-size: 1.4em;
+  font-family: arial;
+}
+
+/*////////////// ARROW ////////////*/
+
+
+.fas {
+  font-size: 3em;
+  color: white;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  z-index: 1000;
+}
+
+/*//////////////MUSIC PLAYER ////////////*/
+
+audio {
+	right: 15px;
+    position: fixed;
+    top: 12px;
+	width: 9em;
+    height: 2em;
+	z-index: 1000;
+}
+
+.controls progress {
+   display:block;
+   width:100%;
+   height:81%;
+   margin-top:0.125rem;
+   border:none;
+   color:#0095dd;
+   -moz-border-radius:2px;
+   -webkit-border-radius:2px;
+   border-radius:2px;
+}

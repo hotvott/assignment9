@@ -1,0 +1,230 @@
+/*  Seaworld blue : #0054a5;
+    Seaworld light blue : #00b1eb
+    Seaworld orange : #ff5c6c
+    */
+
+
+/* This stylesheet sets the general styles of elements that are pressent in "all" pages and sub-pages*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/*///////////TEXT AND HEADLINES/////////////*/
+
+p {
+   line-height: 1.6;
+   margin: 0;
+}
+
+h2 {
+  color: #0054a5;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 3em;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*///////////HEADER/////////////*/
+
+#logo {
+  max-width: 250px;
+  height: auto;
+  padding-right: 12em;
+}
+
+header {
+    box-shadow: 0 1px 10px 0 #d6dce5;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding-left: 5em;
+    position: sticky;
+    top: 0;
+    height: 15em;
+    z-index: 1;
+}
+
+/*///////////SITE COINTAINER/////////////*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1em;
+  height: 10em;
+}
+
+/*///////////NAVIGATION/////////////*/
+.sidenav {
+  padding-left: 15em;
+  text-align: left;
+}
+
+.sidenav li:last-child a:hover{
+  text-decoration: none;
+}
+
+.navigation {
+  padding-left: 2em;
+}
+
+.sidenav li:last-child a {
+  padding: 1.7rem 2rem 1.3rem;
+  border: 0;
+  border-radius: 40px;
+  font-weight: 700;
+  border-color: transparent;
+  background: #ff5c6c;
+  color: #fff;
+  min-width: 18.5rem;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  font-size: 1.4em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+li a:hover:not(.active) {
+  text-decoration: underline;
+}
+
+.sidenav li:last-child a:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  height: 4em;
+}
+
+.navbar a {
+  float: left;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #0054a5;
+  text-decoration: none;
+  padding: 5px 5px;
+  width: 10em;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+
+}
+
+.subnav .subnavbtn {
+  font-size: 1.6em;
+  border: none;
+  outline: none;
+  color: #0054a5;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  float: left;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 5px 5px;
+  width: 10em;
+}
+
+.subnavbtn li{
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: white;
+}
+
+.subnav-content {
+  display: none;
+  float: none;
+  background-color: white;
+  width: max-content
+}
+
+.subnav-content a {
+  color: #0054a5;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.subnav-content a:hover {
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+/*///////////FOOTER/////////////*/
+.footer {
+    background: white;
+    color: grey;
+    text-align: center;
+    padding: 2em;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'arial', sans-serif;
+    box-shadow: 0 1px 10px 0 #d6dce5;
+    margin-top: 2em;
+}
+
+.links li,.links p, .links a {
+  text-align: left;
+  text-decoration: none;
+}
+
+.links a{
+  color: #0054a5;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.links {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.disclaimer {
+  grid-column-start: 2;
+  grid-row: 2;
+
+}
+
+.containerFooter {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: 50px;
+  margin-top: 1em;
+
+}
+
+.logo img{
+  width: 10vw;
+  padding: 1em;
+  text-align: center;
+  grid-column-start: 2;
+}
+
+.logo {
+  border-bottom: solid;
+   border-width: thin;
+  border-color: #d9dde2;
+}
+
+#zoo_logo {
+  width: 10vw;
+  height: auto;
+}

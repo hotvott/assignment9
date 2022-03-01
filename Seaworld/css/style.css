@@ -1,0 +1,178 @@
+/*  Seaworld blue : #0054a5;
+    Seaworld light blue : #00b1eb
+    Seaworld orange : #ff5c6c
+    */
+
+/*///////////BACGROUND IMAGE/////////////*/
+.background_image {
+  background-image: url("https://dikult205.k.uib.no/2019V/F3p19/assignment5/Seaworld/img/sea-background-nudge.png"); /*Image from Sea World gold coast's website https://seaworld.com.au */
+  width: 100vw;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.mainContent p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-size: 1.4em;
+  font-family: arial;
+}
+
+
+/*CONTENT GRIDS*/
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 50px;
+  grid-gap: 1em;
+
+}
+
+.mainContent {
+  background-color: white;
+  grid-column: 2;
+
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  padding: 0.5em;
+}
+
+.headline {
+    grid-column: 2;
+    text-align: center;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+
+.article {
+  padding-top: 1.5em;
+  position: relative;
+}
+
+.facts_article {
+  position: relative;
+}
+
+
+article img {
+  padding-bottom: 2em;
+}
+
+
+
+#a1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#a2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.authorInfo {
+  background: white;
+  grid-column: 2;
+  grid-row: 4;
+  grid-gap: 1em;
+  font-size: 0.7em;
+  color: grey;
+  margin-top: 1em;
+}
+
+.authorInfo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.captions {
+  font-size: 0.7em;
+}
+
+/*///LINKS///*/
+.mainContent a:link {
+  text-decoration: none;
+  color: black;
+  font-family: arial;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1em;
+}
+
+.mainContent a:visited {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  padding-top: 1em;
+}
+
+.mainContent a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.mainContent a:active {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*///BACKGROUND///*/
+.background_image {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+}
+
+
+.background_image h2 {
+  margin: 0;
+  grid-column-start: 2;
+  grid-row-start: 5;
+  text-align: left;
+  font-size: 6em;
+  font-weight: bold;
+  align-self: center;
+  color: white;
+  text-shadow: 2px 2px 4px #0000008c;
+}
+
+#background_img_about {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 20px;
+  width: 7em;
+  height: 2em;
+    padding-top: 1.2em;
+}
+
+#background_img_about  {
+  grid-column-start: 2;
+  grid-row-start: 6;
+}
+
+a#img_article_link {
+  position: unset;
+}
